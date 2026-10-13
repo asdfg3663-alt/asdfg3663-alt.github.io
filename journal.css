@@ -1,0 +1,47 @@
+/* Shared editorial layout for the story and development journal. */
+nav a[aria-current="page"]{color:var(--accent);border-bottom:1px solid var(--accent)}
+.story-banner{background:linear-gradient(90deg,#08100ef2,#08100e88),url('assets/hero.webp') center 45%/cover;border-bottom:1px solid var(--line)}
+.story-banner .section{padding-top:110px;padding-bottom:105px}
+.story-banner h1,.journal-heading h1,.article-heading h1{width:auto;max-width:920px;font-family:'Barlow Condensed','Noto Sans KR',sans-serif;font-size:clamp(42px,5.8vw,78px);line-height:1.12;letter-spacing:-.025em;margin:0 0 28px;white-space:pre-line;word-break:keep-all;overflow-wrap:anywhere}
+.story-banner .lead{max-width:620px;color:#d9ded6;margin-bottom:30px}
+.reading-layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:70px;padding-top:72px;align-items:start}
+.contents{position:sticky;top:30px;border-top:1px solid var(--line);padding-top:20px}
+.contents .eyebrow{font-size:10px;margin-bottom:18px}
+.contents a{display:block;color:var(--muted);font-size:12px;padding:9px 0;line-height:1.6}
+.contents a:hover,.text-link:hover,.back-link:hover{color:var(--accent)}
+.prose{max-width:780px;min-width:0}
+.prose p{font-size:16px;line-height:1.95;color:#d1d7cc;margin:0 0 24px;word-break:keep-all;overflow-wrap:anywhere}
+.prose section{padding-top:44px;margin-bottom:8px;scroll-margin-top:30px}
+.prose h2,html[lang=ko] .prose h2{font-size:clamp(27px,3vw,37px);line-height:1.3;margin-bottom:23px}
+.prose .editorial-note{border-left:2px solid var(--accent);padding:3px 0 3px 22px;color:var(--muted);font-size:13px;line-height:1.9;margin-bottom:6px}
+.article-end{margin-top:56px;padding-top:30px;border-top:1px solid var(--line)}
+.article-end p{font-size:13px;color:var(--muted)}
+.article-end .text-link{display:inline-block;margin-bottom:22px}
+.text-link{font-weight:600;font-size:14px;color:var(--accent)}
+.journal-links{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:9%}
+.journal-links h2{max-width:420px}
+.journal-link{font-size:20px;display:block;border-top:1px solid var(--line);padding-top:20px}
+.journal-link:hover{color:var(--accent)}
+.journal-links .muted{margin:8px 0 28px}
+.journal-heading,.article-heading{padding-top:80px;padding-bottom:40px}
+.journal-heading .lead,.article-heading .lead{max-width:750px;color:var(--muted);margin-bottom:0}
+.archive-layout{padding-top:25px;display:grid;grid-template-columns:minmax(0,2.2fr) minmax(190px,1fr);gap:65px;align-items:start}
+.post-image{display:block;overflow:hidden}
+.post-image img{display:block;width:100%;height:auto;transition:transform .3s}
+.post-image:hover img{transform:scale(1.025)}
+.article-meta{display:flex;flex-wrap:wrap;gap:10px 25px;font-size:10px;letter-spacing:.13em;color:var(--accent);margin:26px 0 20px}
+.featured-post h2,html[lang=ko] .featured-post h2{font-size:clamp(30px,3.5vw,42px);line-height:1.25}
+.featured-post h2 a:hover{color:var(--accent)}
+.featured-post>p,.journal-aside>p{color:var(--muted);font-size:14px;line-height:1.9}
+.journal-aside{border-top:1px solid var(--line);padding-top:24px}
+.journal-aside .eyebrow{color:var(--accent);margin-top:0}
+.journal-aside .text-link{display:block;border-top:1px solid var(--line);margin-top:35px;padding-top:24px}
+.back-link{font-size:12px;color:var(--muted);display:inline-block;margin-bottom:25px}
+.article-heading .article-meta{margin-top:0}
+.article-cover{padding-top:15px;padding-bottom:0}
+.gameplay-figure{margin:30px 0 14px}
+.gameplay-figure img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.gameplay-figure figcaption{font-size:11px;color:var(--muted);line-height:1.7;margin-top:10px}
+.article-cover .gameplay-figure{margin:0}
+@media(max-width:1050px){header{height:auto;min-height:84px;flex-wrap:wrap;gap:18px;padding-top:18px;padding-bottom:18px}nav{gap:18px;flex-wrap:wrap}.reading-layout{gap:38px;grid-template-columns:160px minmax(0,1fr)}.archive-layout{gap:38px}}
+@media(max-width:760px){header{align-items:flex-start;gap:14px}nav{width:100%;gap:10px 18px;justify-content:flex-start}nav a:nth-child(3){display:inline}#language{margin-left:auto}.story-banner .section{padding-top:70px;padding-bottom:70px}.story-banner h1,.journal-heading h1,.article-heading h1{max-width:none;font-size:40px;line-height:1.2}.story-banner .pill{font-size:9px;white-space:normal}.reading-layout{display:block;padding-top:36px}.contents{position:static;display:flex;flex-wrap:wrap;gap:5px 20px;margin-bottom:36px}.contents .eyebrow{width:100%;margin-bottom:6px}.contents a{font-size:11px;padding:4px 0}.prose p{font-size:15px;line-height:1.95}.prose section{padding-top:30px}.prose h2,html[lang=ko] .prose h2{font-size:27px}.journal-links,.archive-layout{grid-template-columns:1fr;gap:25px}.journal-links h2{max-width:none}.journal-heading,.article-heading{padding-top:50px;padding-bottom:30px}.archive-layout{padding-top:10px}.journal-aside{margin-top:25px}.article-meta{font-size:9px;gap:8px 18px}.article-cover{padding-top:0;padding-bottom:0}.gameplay-figure figcaption{font-size:10px}.article-end{margin-top:35px}}
